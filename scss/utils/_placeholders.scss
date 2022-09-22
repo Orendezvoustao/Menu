@@ -1,0 +1,12 @@
+
+%basicHover{
+    transform: scale(1.3);
+    color: $colorTertiary;
+}
+
+%buttonShadow{
+    box-shadow: 0 0.3rem 0.5rem rgba($colorAdd_darkest, 0.2);
+    &:hover{
+        box-shadow: 0 0.4rem 0.5rem rgba($colorAdd_darkest, 0.3);
+    }
+} 

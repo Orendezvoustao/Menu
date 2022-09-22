@@ -1,0 +1,69 @@
+.cardRestaurant{
+
+    width: 90%;
+    max-width: 400px;
+    height: 252px;
+    margin: 1.5rem 0.5rem;
+    border-radius: 0.9rem;
+    overflow: hidden;
+    position: relative;
+  
+    @include bg_textColor($colorAdd_main);
+    @include flexCol(initial,"flexS");
+
+    @extend %buttonShadow;
+
+    @include tablet-limit{
+        width: 40%;
+    }
+
+    @include desktop-limit{
+        width: 20%;
+    }
+
+    &:hover{ //! placeholder à créer
+        transform: translateY(-3px) scale(1.01); 
+    }
+    &:active{
+        transform: translate(0, 0rem);
+        box-shadow: none;
+    }
+    
+    &--new {
+        &::before{
+            content: "New";
+            position: absolute;
+            right: 0.6rem;
+            top: 1rem;
+            width: 80px;
+            height: 30px;
+            
+            font-family: "Roboto",Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+
+            @include flexCol("cen","cen");
+            border-radius: 0.15rem;
+            background-color: $tagColor;
+            color: darken($tagColor,40%);
+        }
+    }
+ 
+    &__image{
+        width: 100%;
+        height: calc(100% - #{$heightInfoForCard});
+        object-fit: cover;
+        object-position: bottom;
+    }
+    &__info{
+        width: 100%;
+        height: $heightInfoForCard;
+        @include flexRow("spB","cen");
+        padding: 0 1.5rem 0 1rem;
+    }
+
+    &__title{
+        margin-bottom: 0.3rem;
+    }
+}
+

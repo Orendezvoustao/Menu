@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta description-->
+    <meta name="description" content="ORendezVous"/>
+
+    <!-- Link to CSS file-->
+    <link rel="stylesheet" href="scss/main.css" />
+
+    <!-- Connect to Fontawesome -->
+    <script src="https://kit.fontawesome.com/ed843d0fbb.js" crossorigin="anonymous"></script>
+
+    <title>AuRendezVous</title>
+  </head>
+  
+  <body>
+
+    <header>
+      <div class="mySite">
+        <!-- For next page : displayNone-->
+        <div class="mySite__backToMenu displayNone">
+          <a href="index.html"><i class="fas fa-lg fa-arrow-left"></i></a>
+        </div> 
+        
+        <h1 class="mySite__title">Bienvenue</h1>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="exploreRestaurants ">
+        <div class="logo">
+          <div class="logo__container">
+            <img class="logo__container__img" src="src/images/logoGrand.png" alt="Filet de Turbot aux agrumes">
+          </div>
+        </div>
+       <h2 class="exploreRestaurants__title">« Ici le bonheur est fait maison »</h2>
+       <button class="btn btn__main" onclick="window.location.href = '#restaurantsSelection';">See our menu</button>
+        <p class="exploreRestaurants__text">We work with fresh, seasonal products, and transform all our products on site.
+
+          The chef offers Mediterranean cuisine, sauces and all our dishes are homemade, with passion and love. The bread is homemade from the French market</p>
+      </section>
+
+      <section id="restaurantsSelection" class="ourRestaurants">
+        <!-- <h2 class="ourRestaurants__title">Choose according to your desires</h2> -->
+        <nav class="ourRestaurants__selection">
+
+          <!--BEVERAGE-->
+          <a href="html/beverage.html" class="cardRestaurant">
+            <img class="cardRestaurant__image" src="src/images/Beverage.jpg" width="400" height="267" alt="cocktail">
+            <div class="cardRestaurant__info">
+              <div class="cardRestaurant__text">
+                <h3 class="cardRestaurant__title">BEVERAGE</h3>
+                <p class="cardRestaurant__district">Discover our tasty cocktails, and more ...</p>
+              </div>
+            </div>
+          </a>
+
+          <!--FOOD-->
+          <a href="html/food.html" class="cardRestaurant cardRestaurant--new">
+            <img class="cardRestaurant__image" src="src/images/apero.jpg" width="400" height="267" alt="cocktail">
+            <div class="cardRestaurant__info">
+              <div class="cardRestaurant__text">
+                <h3 class="cardRestaurant__title">FOOD</h3>
+                <p class="cardRestaurant__district">Discover our tasty cocktails, and more ...</p>
+              </div>
+            </div>
+          </a>
+
+          <!--APERO TIME-->
+          <a href="html/aperotime.html" class="cardRestaurant">
+            <img class="cardRestaurant__image" src="src/images/apero.jpg" width="400" height="267" alt="cocktail">
+            <div class="cardRestaurant__info">
+              <div class="cardRestaurant__text">
+                <h3 class="cardRestaurant__title">APERO</h3>
+                <p class="cardRestaurant__district">Discover our tasty cocktails, and more ...</p>
+              </div>
+            </div>
+          </a>
+
+          
+        </nav>
+      
+      </section>
+    </main>
+
+    <footer>
+        <ul class="endPage">
+          <li class="endPage__title question">Did you enjoy your meal ?</li>
+          <li class="endPage__title question">Share and let us know with a quick comment !</li>
+          <button class="btn btn__main btn__footer" onclick="window.location.href = 'https\:goo.gl/maps/4dSAM3PEghGwYrpX6';">Let's my comment !</button>
+          <li class="endPage__title logoFont">Au Rendez-Vous</li>
+         
+          <div class="socialMedia">
+            <a
+              href="https://www.instagram.com/orendezvoustao/?igshid=YmMyMTA2M2Y%3D&fbclid=IwAR04g1mg5DvmtVWqcMrOMrbh7bcyEGkZniYLBU6UYNu_0KN-Bm8sWOMqGY4"
+              class="socialMedia__link socialMedia__link--insta"
+            >
+              <ion-icon name="logo-instagram" class="socialMedia__icon"></ion-icon>
+            </a>
+            <a
+              href="https://www.facebook.com/orendezvoustao"
+              class="socialMedia__link socialMedia__link--fb"
+            >
+              <ion-icon name="logo-facebook" class="socialMedia__icon"></ion-icon>
+            </a>
+            <a
+              href="https://www.tiktok.com/@orendezvoustao?_t=8VBWVqaFGiH&_r=1&fbclid=IwAR0o4VZrnq7T9bM9J8slIiDwgnvsJU5bE3eGxt1a6vvMeoex1wHJ_h3SVg0"
+              class="socialMedia__link socialMedia__link--tiktok"
+            >
+              <ion-icon name="logo-tiktok" class="socialMedia__icon"></ion-icon>
+            </a>
+          
+            
+          </div>
+        </ul> 
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

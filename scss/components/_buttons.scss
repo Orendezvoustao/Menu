@@ -1,0 +1,198 @@
+//* Boutons du site -------------------------------
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 1.5rem;
+  @extend %buttonShadow;
+  &:hover {
+    transform: translate(0, -0.1rem);
+  }
+  &:active {
+    transform: translate(0, 0rem);
+    box-shadow: none;
+  }
+
+  &__main {
+    width: 218px;
+    height: 50px;
+    background: linear-gradient(355deg, $colorPrimary, $colorSecondary);
+    color: white;
+    font-size: 1rem;
+    &:hover {
+      background: linear-gradient(
+        355deg,
+        lighten($colorPrimary, 4%),
+        lighten($colorSecondary, 2%)
+      );
+      cursor: pointer;
+    }
+  }
+
+  &__footer {
+    width: 218px;
+    height: 50px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(355deg, $colorSecondary, $colorTertiary );
+    color: white;
+    font-size: 1rem;
+    &:hover {
+      background: linear-gradient(
+        355deg,
+        lighten($colorTertiary, 4%),
+        lighten($colorSecondary, 2%)
+      );
+      cursor: pointer;
+    }
+  }
+
+  &__tutorial {
+    width: 100%;
+    height: 75px;
+    margin: 0.5rem 0;
+
+    font-size: 1rem;
+    position: relative;
+    @include bg_textColor($colorAdd_light);
+    @include flexRow(initial, "cen");
+
+    @include mobile-limit {
+      width: 70%;
+    }
+    @include tablet-limit {
+      width: 28%;
+      padding-right: 0.5rem;
+    }
+    i {
+      margin: 0 1.5rem 0 2rem;
+      color: darken($colorAdd_dark, 40%);
+    }
+    &:hover {
+      background: lighten($colorPrimary, 35%);
+      > i {
+        color: $colorPrimary;
+      }
+    }
+    &::before {
+      counter-increment: step 1;
+      content: counter(step) " ";
+
+      @include bg_textColor($colorPrimary);
+      @include flexCol("cen", "cen");
+
+      font-size: 0.9rem;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 0.75rem;
+    }
+  }
+}
+
+//! Voir pour ajouter des transitions sur les boutons au hover
+
+//* Bouton Like-----------------------------------
+.icon__heart {
+  width: 25px;
+  height: 25px;
+
+  &--firstColor {
+    stop-color: $colorPrimary;
+  }
+
+  &--secondColor {
+    stop-color: $colorSecondary;
+  }
+
+  &--design {
+    //état au départ
+    fill: transparent; //remplissage
+    stroke-width: 1.5rem; //épaisseur tracé
+    stroke: $textColor_default; //couleur tracé
+    transform-origin: 50% 50%; //centrage du point d'ancrage
+  }
+
+  &:active {
+    .icon__heart--design {
+      animation: fill-heart 0.5s ease-in-out forwards;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    path {
+      animation: bump-heart 0.9s ease-in-out infinite;
+    }
+  }
+}
+
+//* Social media Icons *//
+
+.socialMedia {
+  width: 100%;
+  height: 50px;
+  @include flexRow(space-evenly, center);
+  //margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+  }
+
+  &__link {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    @include flexRow(center, center);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      opacity: 0;
+      z-index: 1;
+      transition: opacity 300ms;
+    }
+
+    &--insta::after {
+      background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+      );
+    }
+    &--tiktok::after {
+      background: linear-gradient(
+  
+        #EE1D52 20%,
+        #69C9D0 80%
+      );
+    }
+    &--fb::after {
+      background-color: #3b5998;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+    &:hover .socialMedia__icon path {
+      fill: $textColor_Light;
+    }
+  }
+}
+

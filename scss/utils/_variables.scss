@@ -1,0 +1,29 @@
+//* Graphical charter : Color
+
+$colorPrimary: #8b154e;
+$colorSecondary: #B61B30;
+$colorTertiary: #D5707C;
+$tagColor:rgb(86, 248, 46);
+
+//Additional colors
+$colorAdd_main: rgb(251, 246, 248);
+$colorAdd_light: darken($colorAdd_main, 4%);
+$colorAdd_dark: darken($colorAdd_main, 10%);
+$colorAdd_darkest: darken($colorAdd_main, 70%);
+
+//Textcolor
+$textColor_default: #101010;
+$textColor_Light: white;
+
+//!NOTA : For text color, automatic change : see in _mixins.scss //
+
+//* Dimensions:
+$heightInfoForCard: 75px;
+$checkTranslate: 0px !default;
+
+//* Breakpoints maps
+$breakpoints: (
+  mobile: 510px,
+  tablet: 768px,
+  desktop: 1200px,
+);

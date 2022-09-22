@@ -1,0 +1,241 @@
+//! Loader keyframes
+
+@keyframes textNeon {
+    0%{
+        color: $colorTertiary;
+    }
+    90%{
+        color: $colorAdd_darkest;
+    }
+    100%{
+        color: $colorTertiary;
+    }
+}
+
+@keyframes endLoader{
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+        z-index: -99;
+    }
+}
+
+@keyframes rotateCircle{
+    0%{
+        transform: scale(0);
+    }
+    3%{
+        transform: scale(1);
+    }
+
+    20%,33%{
+        transform: scale(0);
+        background: $colorSecondary;
+        box-shadow: 0 0 10px $colorSecondary,
+                    0 0 20px $colorSecondary,
+                    0 0 40px $colorSecondary,
+                    0 0 60px $colorSecondary;
+    }
+    36%{
+        transform: scale(1);
+    }
+
+    53%,66%{
+        transform: scale(0);
+        background: $colorTertiary;
+        box-shadow: 0 0 10px $colorTertiary,
+                    0 0 20px $colorTertiary,
+                    0 0 40px $colorTertiary,
+                    0 0 60px $colorTertiary;
+    }
+    
+    69%{
+        transform: scale(1);
+    }
+
+    86%,100%{
+        transform: scale(0);
+    }
+}
+
+// @keyframes rotateCircleB{
+//     0%{
+//         transform: scale(0);
+//     }
+//     10%{
+//         transform: scale(1);
+//     }
+
+//     33%{
+//         background: $colorSecondary;
+//         box-shadow: 0 0 10px $colorSecondary,
+//                     0 0 20px $colorSecondary,
+//                     0 0 40px $colorSecondary,
+//                     0 0 60px $colorSecondary;
+//     }
+   
+//     66%{
+//         background: $colorTertiary;
+//         box-shadow: 0 0 10px $colorTertiary,
+//                     0 0 20px $colorTertiary,
+//                     0 0 40px $colorTertiary,
+//                     0 0 60px $colorTertiary;
+//     }
+
+//     90%,100%{
+//         transform: scale(0);
+//     }
+// }
+
+@keyframes bumpLoader{
+    0%
+    {
+        stroke: $colorPrimary; //couleur tracé
+        transform: scale(1);
+    }
+
+    10%
+    {
+        transform: scale(0.8);
+    }
+
+    30%
+    {
+        transform: scale(1);
+    }
+
+    33%{
+        stroke: $colorSecondary; //couleur tracé
+    }
+
+    50%
+    {
+        transform: scale(0.8);
+    }
+    
+    66%{
+        stroke: $colorTertiary; //couleur tracé
+    }
+
+    70%
+    {
+        transform: scale(1);
+    }
+
+    100%
+    {
+        stroke: $colorPrimary;
+        transform: scale(1);
+    }
+}
+
+//! Like keyframes
+
+@keyframes fill-heart{
+
+    0%
+    {
+        fill-opacity: 0;
+    }
+    
+    30%
+    {
+        stroke-width: 0;
+    }
+
+    40%
+    {
+        fill: url(#heartGradient);
+        fill-opacity: 0;
+    }
+
+    100%
+    {
+        stroke-width: 0;
+        fill: url(#heartGradient);
+        fill-opacity: 1;
+    }
+
+}
+
+@keyframes bump-heart{
+    0%
+    {
+        stroke: $colorPrimary;
+        transform: scale(0.9);
+    }
+
+    20%
+    {
+        transform: scale(1);
+    }
+
+    40%
+    {
+        transform: scale(0.9);
+    }
+
+    60%
+    {
+        transform: scale(1);
+    }
+
+    100%
+    {
+        stroke: $colorPrimary;
+        transform: scale(1);
+    }
+}
+
+//! check Dish
+
+@keyframes checkDish{
+    0%
+    {
+        $checkTranslate: 0px;
+        transform: translate($checkTranslate);
+    }
+
+    100%
+    {
+        $checkTranslate: -60px;
+        transform: translate($checkTranslate);
+    }
+}
+@keyframes reduceText{
+    0%
+    {
+        $checkTranslate: 0px;
+        width: calc(80% + #{($checkTranslate)});
+    }
+
+    100%
+    {
+        $checkTranslate: -60px;
+        width: calc(80% + #{($checkTranslate)});
+    }
+}
+
+//! appearance Dish
+
+@keyframes appearanceDish{
+    0%
+    {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+
+    70%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

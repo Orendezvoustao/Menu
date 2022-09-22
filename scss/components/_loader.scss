@@ -1,0 +1,77 @@
+
+.loader{
+    width: 100%;
+    height: 100%;
+    
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    z-index: 99;
+    background: linear-gradient(335deg, rgba($colorAdd_darkest,1) 20%, rgba($colorAdd_darkest,0.8) 100%);
+    
+    @include flexRow("cen","cen");
+
+    &--end{
+        animation: endLoader 0.3s ease-out 3s forwards;
+    }
+
+    &__text{
+        position: absolute;
+        top:65%;
+        &--letter{
+        color: $colorAdd_darkest;
+        animation: textNeon 1s linear infinite;
+        @include incrementDelayForLetter;
+    }
+    }
+
+    &__spinner{
+        width: 120px;
+        height: 120px;
+
+        position: relative;   
+
+        &--element{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            @include circlePositionForChild;
+            @include incrementDelayForCircle;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left:0;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background: $colorPrimary;
+                box-shadow: 0 0 10px $colorPrimary,
+                            0 0 20px $colorPrimary,
+                            0 0 40px $colorPrimary,
+                            0 0 60px $colorPrimary;
+                
+                animation: rotateCircle 1s linear infinite;
+                transform: scale(0);
+            }
+        }
+    }
+
+    &__heart{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+
+        &--design { //état au départ
+            fill: transparent; //remplissage
+            stroke-width: 2.5rem; //épaisseur tracé
+            transform-origin: 50% 50%; //centrage du poin d'ancrage
+            animation: bumpLoader 1s ease-in-out infinite; 
+        }
+    }
+}

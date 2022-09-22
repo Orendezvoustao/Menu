@@ -1,0 +1,222 @@
+.restaurant {
+  position: relative;
+  width: 100%;
+  @include flexCol("cen", "cen");
+
+  &__image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: bottom;
+    margin-bottom: -50px;
+    @include tablet-limit {
+      max-width: 1200px;
+      margin-bottom: -120px;
+    }
+  }
+
+  &__menu {
+    position: relative;
+    width: 100%;
+    //padding: 1.8rem 1.2rem 1.8rem 1.2rem;
+    border-radius: 2.8rem 2.8rem 0 0;
+    background-image: url("/src/images/fond_marbre.png");
+    @include bg_textColor($colorAdd_light);
+    @include flexCol("cen", "cen");
+
+    // @include mobile-limit {
+    //   max-width: 550px;
+    //   border-radius: 2.8rem;
+    //   margin: 0 auto 3rem auto;
+    // }
+
+    @include tablet-limit {
+      max-width: 700px;
+      //height: 550px;
+      @include flexRow("SpB", "flexS");
+      flex-wrap: wrap;
+      border-radius: 2.8rem;
+      margin: 0 auto 3rem auto;
+    }
+  }
+
+  &__name {
+    width: 100%;
+    margin-bottom: 2rem;
+    @include flexRow("spB", "cen");
+  }
+
+  &__title {
+    position: relative;
+    padding: 1rem;
+    @include mobile-limit {
+      width: 100%;
+      text-align: center;
+    }
+    background: rgba(217, 217, 217, 0.05);
+    box-shadow: inset 27.9667px -27.9667px 27.9667px rgba(165, 165, 165, 0.05),
+      inset -27.9667px 27.9667px 27.9667px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(36.6363px);
+
+    border-radius: 2rem 2rem 0 0;
+  }
+
+  &__order {
+    width: 100%;
+    @include flexCol("cen", "cen");
+
+    margin: 0.5rem 0 2.5rem 0;
+  }
+}
+
+.menuPart {
+  width: 100%;
+  @include flexCol("cen", "cen");
+  margin-bottom: 2.5rem;
+
+  &__name {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(
+      90deg,
+      $colorAdd_main,
+      rgba($colorAdd_main, 0.7)
+    );
+
+    margin-bottom: 1rem;
+    padding: 1rem;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      margin: 0.3rem 0;
+      background: $colorTertiary;
+    }
+
+    // @include tablet-only {
+    //   text-align: center;
+    //   &::after {
+    //     transform: translateX(-21px);
+    //   }
+    // }
+  }
+}
+
+.dish {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  height: 100%;
+  @include bg_textColor($colorAdd_main);
+  margin: 0.5rem auto;
+  padding: 0.7rem 0.7rem;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  @include flexRow("spB", "cen");
+  @extend %buttonShadow;
+
+  animation: appearanceDish 1s ease-in-out backwards;
+  @include incrementDelayForDish;
+
+  // &:hover{ //! placeholder à créer
+  //     transform: translateY(-3px) scale(1.01);
+  // }
+
+  // &:active {
+  //   transform: scale(1);
+  //   box-shadow: none;
+
+  //   > .dish {
+  //     &__price {
+  //       animation: checkDish 0.4s ease-out forwards;
+  //     }
+  //     &__selection {
+  //       animation: checkDish 0.4s ease-out forwards;
+  //       > .dish__selection--icon {
+  //         transform: rotate(720deg);
+  //       }
+  //     }
+  //     &__name {
+  //       animation: reduceText 0.4s ease-out forwards;
+  //     }
+  //}
+  //}
+
+  &__name {
+    width: 85%;
+
+    &--title {
+      margin-bottom: 0.3rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &--side {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 0.2rem;
+      letter-spacing: 1px;
+    }
+    &--sideBis {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 0.2rem;
+      letter-spacing: 0px;
+    }
+  }
+
+  &__price {
+    //width: 15%;
+    height: 100%;
+    @include flexCol("flexS", center);
+    text-align: center;
+  }
+
+  &__selection {
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    right: -60px;
+    background: $colorTertiary;
+    @include flexRow("cen", "cen");
+
+    &--icon {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: $colorAdd_main;
+      transition: transform 0.4s;
+      transform: rotate(-180deg);
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 16px;
+        right: 13px;
+        width: 8px;
+        height: 3px;
+        border-radius: 1px;
+        background-color: $colorTertiary;
+        transform-origin: right;
+        transform: rotate(45deg);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 16px;
+        left: 10px;
+        width: 14px;
+        height: 3px;
+        border-radius: 1px;
+        background-color: $colorTertiary;
+        transform-origin: left;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta description-->
+    <meta name="description" content="Au rendez-vous : Beverage Menu"/>
+
+    <!-- Link to CSS file-->
+    <link rel="stylesheet" href="../scss/main.css" />
+
+    <!-- Connect to Fontawesome -->
+    <script src="https://kit.fontawesome.com/ed843d0fbb.js" crossorigin="anonymous"></script>
+
+    <title>ORDV - BEVERAGE</title>
+  </head>
+  
+  <body>
+
+    <header class="stickyTop">
+      <div class="mySite ">
+        <div class="mySite__backToMenu">
+          <a href="../index.html"><i class="fas fa-lg fa-arrow-left"></i></a>
+        </div> 
+        <h1 class="mySite__title">Beverage</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="restaurant">
+        
+        <h2 class="displayNone">Beverage</h2>
+        <img class="restaurant__image stickyDown" src="../src/images/Beverage.jpg" width="1200" height="800" alt="Coquilles Saint-Jacques"><!--A modifier suivant page-->
+        
+        <div class="restaurant__menu">
+          <div class="restaurant__name">
+            <h2 class="restaurant__title">« Le monde entier est ivre et nous ne sommes que le cocktail du moment »
+            </h2>
+            <!-- <div class="icon__heart">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 0 550 512">
+                <defs>
+                  <linearGradient id="heartGradient" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0%" class="icon__heart--firstColor"/>
+                    <stop offset="100%" class="icon__heart--secondColor"/>
+                  </linearGradient>
+                </defs>
+                <path class="icon__heart--design" d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                C512,93.417,453.532,30,376,30z"/>
+              </svg>
+            </div> -->
+          </div>
+        
+          <div class="menuPart">
+            <div class="menuPart__name">
+              <h3 class="menuPart__title">SIGNATURE COCKTAILS</h3>
+            </div>
+            
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">ROSEMARY FIZZ</h4>
+                <p class="dish__name--side">Gin infused rosemary, lemon, simple sirup, soda water</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">150 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">SANGSOM SOUR</h4>
+                <p class="dish__name--side">Sangsom, lemon, simple sirup, white egg, lemon zest</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">150 THB</p>
+              </div>
+              <!-- <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div> -->
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">THAÏ MULE</h4>
+                <p class="dish__name--side">Sangsom, smashed ginger, lemon, simple sirup, soda water</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">150 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">MAÏ TAO</h4>
+                <p class="dish__name--side">White rhum, amaretto, triple sec, lemon, pineapple juice</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">160 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">WHITE ASIAN</h4>
+                <p class="dish__name--side">Vodka, coffee liquor, coco milk, cinnamon</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">160 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">COCKTAIL OF THE WEEK</h4>
+                <p class="dish__name--side">Check the board or ask the staff</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">130 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="menuPart">
+            <div class="menuPart__name">
+              <h3 class="menuPart__title">CLASSIC COCKTAILS</h3>
+            </div>
+            
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">MOJITO</h4>
+                <p class="dish__name--side">White rhum, lemon, mint, simple sirup, soda water</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">150 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">BLOODY MARY</h4>
+                <p class="dish__name--side">Vodka, lemon, spices mix, tomato juice</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">150 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">CAÏPIRIÑA</h4>
+                <p class="dish__name--side">Cachaça, lemon, simple sirup</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">150 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">AMARETTO SOUR</h4>
+                <p class="dish__name--side">Amaretto liquor, lemon, white egg</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">150 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">WISKEY SOUR</h4>
+                <p class="dish__name--side">Wiskey, lemon, simple sirup, white egg</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">150 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">NEGRONI</h4>
+                <p class="dish__name--side">Gin, vermouth, bitter, lemon zest</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">180 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">PINA COLADA</h4>
+                <p class="dish__name--side">White rhum, dark rhum, coco milk, pineapple juice</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">160 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">EXPRESSO MARTINI</h4>
+                <p class="dish__name--side">Expresso, Vodka, coffe liquor, simple sirup</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">180 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">LONG ISLAND ICED TEA</h4>
+                <p class="dish__name--side">Gin, vodka, white rhum, tequila, triple sec, lemon, cola</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">200 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="menuPart">
+            <div class="menuPart__name">
+              <h3 class="menuPart__title">GIN'TONIC</h3>
+            </div>
+            
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">GILBEY’S</h4>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">100 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">BEEFEATER</h4>
+                
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">150 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">TANQUERAY</h4>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">200 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">HENDRICKS AMAZONIA</h4>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">200 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="menuPart">
+            <div class="menuPart__name">
+              <h3 class="menuPart__title">BEERS</h3>
+            </div>
+            
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">IPA Beerlao</h4>
+                <p class="dish__name--side">Alc. 5%  -  330ml</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">130 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">WHITE Beerlao</h4>
+                <p class="dish__name--side">Alc. 5%  -  330ml</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">130 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">SINGHA</h4>
+                <p class="dish__name--side">Alc. 5%  -  320ml</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">70 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">LEO</h4>
+                <p class="dish__name--side">Alc. 5%  -  320ml</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">70 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">LEO</h4>
+                <p class="dish__name--side">Alc. 5%  -  620ml</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">110 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">CHANG</h4>
+                <p class="dish__name--side">Alc. 4,8%  -  620ml</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">110 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="menuPart">
+            <div class="menuPart__name">
+              <h3 class="menuPart__title">WINE</h3>
+            </div>
+            
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">LAPOSTOLLE rosé</h4>
+                <p class="dish__name--side">Chili, 42% Cinsault, 28% Syrah, 24% Grenache, 6% Mourvèdre</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">200 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="menuPart">
+            <div class="menuPart__name">
+              <h3 class="menuPart__title">SPIRITS</h3>
+            </div>
+            
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">PASTIS</h4>
+                <p class="dish__name--side">Alc. 45%  -  4cl</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">100 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">RICARD</h4>
+                <p class="dish__name--side">Alc. 45%  -  4cl</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">150 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">MARTINI</h4>
+                <p class="dish__name--side">Alc. 15%  -  4cl</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">150 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>  
+            
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">AMARETTO</h4>
+                <p class="dish__name--side">Alc. 18%  -  4cl</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">120 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">CHARTREUSE VERTE</h4>
+                <p class="dish__name--side">Alc. 55%  -  4cl</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">300 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">BACARDI CARTA NEGRO</h4>
+                <p class="dish__name--side">Alc. 40%  -  4cl</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">140 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>  
+            
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">CHALONG BAY (PHUKET)</h4>
+                <p class="dish__name--side">Alc. 40%  -  4cl</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">150 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div> 
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">JACK DANIELS HONEY</h4>
+                <p class="dish__name--side">Alc. 35%  -  4cl</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">250 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div> 
+          </div>
+
+          <div class="menuPart">
+            <div class="menuPart__name">
+              <h3 class="menuPart__title">DRINKS</h3>
+            </div>
+            
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">HOMEMADE ICED TEA</h4>
+                <p class="dish__name--side">Jasmine green tea, mint, ginger, lemongrass, passionfruit, coco sugar</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">40 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">SINGHA WATER</h4>
+                <p class="dish__name--side">500ml</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">30 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">SODA WATER</h4>
+                <p class="dish__name--side">320ml</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">30 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">SOFTS</h4>
+                <p class="dish__name--side">Coca, schweppes, schweppes lemon</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">40 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">JUICES</h4>
+                <p class="dish__name--side">Pineapple, apple, tomato</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">50 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">SHAKE</h4>
+                <p class="dish__name--side">Pineapple or mango or melon or banana</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">50 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">SHAKE</h4>
+                <p class="dish__name--side">Lemon or passion or dragon fruit</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">60 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">EXTRA</h4>
+                <p class="dish__name--side">Add ginger or coco milk in your shake</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">10 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="menuPart">
+            <div class="menuPart__name">
+              <h3 class="menuPart__title">SMOOTHIES</h3>
+            </div>
+            
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">FRUIT POWER</h4>
+                <p class="dish__name--side">Mango, passion, lemon, smashed ginger</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">100 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">GREEN FRESH</h4>
+                <p class="dish__name--side">Cucumber, mint, lemon, apple juice</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">100 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">HELL AVOCADO</h4>
+                <p class="dish__name--side">Avocado, tomato juice, lemon, spices mix</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">100 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>   
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">CARIBBEAN FLY</h4>
+                <p class="dish__name--side">Pineapple, banana, lemon, cinnamon</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">100 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div> 
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">SWEET COCO</h4>
+                <p class="dish__name--side">Banana, pineapple, coco milk</p>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">100 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div> 
+
+          </div>
+
+          <div class="menuPart">
+            <div class="menuPart__name">
+              <h3 class="menuPart__title">CAFETERIA</h3>
+            </div>
+            
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">EXPRESSO</h4>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">40 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">COFFEE</h4>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">40 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div>
+
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">AMERICANO</h4>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">50 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div> 
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">DOUBLE EXPRESSO</h4>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">70 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div> 
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">CAPPUCINO</h4>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">80 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div> 
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">FLAT WHITE</h4>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">70 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div> 
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">HOT CHOCOLATE</h4>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">80 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div> 
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">ICED COFFEE</h4>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">50 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div> 
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">ICED COFFEE WITH MILK</h4>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">60 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div> 
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">VANILLA ICED COFFEE</h4>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">60 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div> 
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">BLACK TEA</h4>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">50 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div> 
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">JASMINE GREEN TEA</h4>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">50 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div> 
+            <div class="dish">
+              <div class="dish__name">
+                <h4 class="dish__name--title">INFUSION</h4>
+              </div>
+              <div class="dish__price">
+                <p class="dish__price--amount">50 THB</p>
+              </div>
+              <div class="dish__selection">
+                <div class="dish__selection--icon"></div>
+              </div>
+            </div> 
+            
+            
+          </div>
+
+        </div>
+
+
+      </section>
+    </main>
+
+    <footer>
+      <ul class="endPage">
+        <li class="endPage__title question">Did you enjoy your meal ?</li>
+        <li class="endPage__title question">Share and let us know with a quick comment !</li>
+        <button class="btn btn__main btn__footer" onclick="window.location.href = 'https\:goo.gl/maps/4dSAM3PEghGwYrpX6';">Let's my comment !</button>
+        <li class="endPage__title logoFont">Au Rendez-Vous</li>
+       
+        <div class="socialMedia">
+          <a
+            href="https://www.instagram.com/orendezvoustao/?igshid=YmMyMTA2M2Y%3D&fbclid=IwAR04g1mg5DvmtVWqcMrOMrbh7bcyEGkZniYLBU6UYNu_0KN-Bm8sWOMqGY4"
+            class="socialMedia__link socialMedia__link--insta"
+          >
+            <ion-icon name="logo-instagram" class="socialMedia__icon"></ion-icon>
+          </a>
+          <a
+            href="https://www.facebook.com/orendezvoustao"
+            class="socialMedia__link socialMedia__link--fb"
+          >
+            <ion-icon name="logo-facebook" class="socialMedia__icon"></ion-icon>
+          </a>
+          <a
+            href="https://www.tiktok.com/@orendezvoustao?_t=8VBWVqaFGiH&_r=1&fbclid=IwAR0o4VZrnq7T9bM9J8slIiDwgnvsJU5bE3eGxt1a6vvMeoex1wHJ_h3SVg0"
+            class="socialMedia__link socialMedia__link--tiktok"
+          >
+            <ion-icon name="logo-tiktok" class="socialMedia__icon"></ion-icon>
+          </a>
+        
+          
+        </div>
+      </ul> 
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  </body>
+</html>
