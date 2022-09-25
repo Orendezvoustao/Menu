@@ -324,21 +324,13 @@ main {
   }
 }
 @font-face {
-  font-family: "Buffalo";
-  src: url("/src/fonts/Buffalo.otf") format("otf");
-}
-@font-face {
-  font-family: "Buffalo";
-  src: url("https://orendezvoustao.github.io/Menu/src/fonts/Buffalo.otf") format("otf");
-}
-@font-face {
   font-family: "Adlery";
   src: url("https://orendezvoustao.github.io/Menu/src/fonts/Adlery.ttf") format("truetype");
 }
 .logoFont,
 .loader__text,
 .restaurant__title {
-  font-family: "Buffalo", cursive, Arial, Helvetica, sans-serif;
+  font-family: "Dancing Script", cursive, Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
@@ -365,7 +357,7 @@ p {
 .logoFont {
   font-size: 2.5rem;
   font-weight: normal;
-  font-family: "Buffalo", cursive, Arial, Helvetica, sans-serif;
+  font-family: "Dancing Script", cursive, Arial, Helvetica, sans-serif;
 }
 
 .loader__text {
@@ -398,12 +390,12 @@ p {
 .mySite__title {
   font-size: 3.5rem;
   font-weight: 500;
-  font-family: "Buffalo", cursive, Arial, Helvetica, sans-serif;
+  font-family: "Dancing Script", cursive, Arial, Helvetica, sans-serif;
 }
 
 .exploreRestaurants__title {
   font-size: 3rem;
-  font-family: "Buffalo", cursive, Arial, Helvetica, sans-serif;
+  font-family: "Dancing Script", cursive, Arial, Helvetica, sans-serif;
 }
 
 .exploreRestaurants__text {

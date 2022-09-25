@@ -7,19 +7,12 @@
 //@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 //Associations par défaut des polices
 @import url("https://fonts.googleapis.com/css2?family=Antic+Didone&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-//buffalo
+//Dancing Script
 
-// Buffalofont
+// Dancing Scriptfont
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
 
-@font-face {
-  font-family: "Buffalo";
-  src: url("/src/fonts/Buffalo.otf") format("otf");
-}
-@font-face {
-  font-family: "Buffalo";
-  src: url("https://orendezvoustao.github.io/Menu/src/fonts/Buffalo.otf") format("otf");
-}
+
 @font-face {
   font-family: "Adlery";
   src: url("https://orendezvoustao.github.io/Menu/src/fonts/Adlery.ttf") format("truetype");
@@ -31,7 +24,7 @@
 .logoFont,
 .loader__text,
 .restaurant__title {
-  font-family: 'Buffalo', cursive, Arial, Helvetica, sans-serif;
+  font-family: 'Dancing Script', cursive, Arial, Helvetica, sans-serif;
   font-weight: bold;
 
 }
@@ -71,7 +64,7 @@ p {
 .logoFont {
   font-size: 2.5rem;
   font-weight: normal;
-  font-family: "Buffalo", cursive, Arial, Helvetica, sans-serif;
+  font-family: "Dancing Script", cursive, Arial, Helvetica, sans-serif;
   //font-family: 'Antic Didone', Arial, Helvetica, sans-serif;
   //font-family: 'Roboto', Arial, Helvetica, sans-serif;
  
@@ -108,7 +101,7 @@ p {
 .mySite__title {
   font-size: 3.5rem;
   font-weight: 500;
-  font-family: "Buffalo", cursive, Arial, Helvetica, sans-serif;
+  font-family: "Dancing Script", cursive, Arial, Helvetica, sans-serif;
   // font-family: 'Antic Didone', Arial, Helvetica, sans-serif;
   //font-family: 'Adlery', Arial, Helvetica, sans-serif;
 }
@@ -116,7 +109,7 @@ p {
 .exploreRestaurants__title {
   font-size: 3rem;
   //font-weight: 300;
-  font-family: "Buffalo", cursive, Arial, Helvetica, sans-serif;
+  font-family: "Dancing Script", cursive, Arial, Helvetica, sans-serif;
   //font-family: 'Antic Didone', Arial, Helvetica, sans-serif;
   // font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
@@ -124,7 +117,7 @@ p {
 .exploreRestaurants__text {
   font-size: 1.3rem;
   font-weight: 200;
-  //font-family: "Buffalo", cursive, Arial, Helvetica, sans-serif;
+  //font-family: "Dancing Script", cursive, Arial, Helvetica, sans-serif;
   font-family: 'Antic Didone', Arial, Helvetica, sans-serif;
   // font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
